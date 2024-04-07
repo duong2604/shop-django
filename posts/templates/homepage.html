@@ -1,27 +1,18 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    {% comment %} <div class="box-container">
-      {% for post in posts %}
-      <article>
-        <img src="{{ post.image }}" alt="" />
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.body }}</p>
-        <p>{{ post.slug }}</p>
-        <i>author: {{ post.author }}</i>
-        <span>on {{post.date}}</span>
-      </article>
-    {% endfor %}
-    </div> {% endcomment %}
 
+
+  <section id="banner">
+    {% include "./shared/banner.html" %}
+  </section>
+
+  <section id="products">
+
+  </section>
+
+  <section id="contacts">
+
+  </section>
 
 {% endblock content %}
-
-
-
-
-
-
-
-
-
