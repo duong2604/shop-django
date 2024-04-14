@@ -7,8 +7,16 @@
     {% include "./shared/banner.html" %}
   </section>
 
-  <section id="products">
-
+  <section id="products" class="container">
+      <div class="d-flex justify-content-between align-items-center my-5 w-full">
+        <h2 class='text-center fw-semibold text-color-secondary fs-2 color-white'>My posts</h2>
+        <button class="btn btn-light fw-bold">View All</button>
+      </div>
+      <div class=" d-flex flex-wrap align-items-center justify-content-start gap-4 w-full">
+        {% for post in posts %}
+          {% include "./shared/item.html" %}
+        {% endfor %}
+      </div>
   </section>
 
   <section id="contacts">
